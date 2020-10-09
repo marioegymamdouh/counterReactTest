@@ -1,0 +1,48 @@
+.counter{
+    background-color: #252e35;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 30px;
+    margin: 0 20px;
+}
+
+.counter h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin: 0 0 20px;
+}
+
+.btnsContainer{
+    margin-bottom: 20px;
+    display: flex;
+}
+label{
+    color: #fff;
+    text-align: center;
+    display: block;
+    user-select: none;
+    margin-bottom: 15px;
+}
+input[type='checkbox']{
+    display: none;
+}
+input[type='checkbox'] + div {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: max-height 300ms ease-in-out;
+}
+input[type='checkbox']:checked + div {
+    max-height: 200px;
+}

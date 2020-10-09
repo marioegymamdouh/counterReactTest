@@ -1,8 +1,11 @@
 import React from "react";
+import styles from "./Reset.css";
+
 
 const reset = (props) => {
+
     return (
-        <button onClick={props.click} type='button'>Reset</button>
+        <button disabled={props.disabled} className={styles.reset} onClick={props.click} type='button'>Reset</button>
     )
 };
 

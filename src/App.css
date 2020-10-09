@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.App{
+    background-color: #111;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media (min-width: 780px) {
+    .App{
+        background-color: #2f3841;
+    }
+}
